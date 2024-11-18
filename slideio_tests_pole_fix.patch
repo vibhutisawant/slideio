@@ -1,0 +1,14 @@
+diff --git a/src/tests/main/conanfile.txt b/src/tests/main/conanfile.txt
+index f5974e9..b904ae5 100644
+--- a/src/tests/main/conanfile.txt
++++ b/src/tests/main/conanfile.txt
+@@ -7,6 +7,6 @@ gtest/cci.20210126
+ opencv/4.1.1@slideio/stable
+ zlib/1.2.13
+ tinyxml2/9.0.0
+-pole/1.0.2@slideio/stable
++pole/master@slideio/stable
+ [options]
+-glog:shared=True
+\ No newline at end of file
++glog:shared=True

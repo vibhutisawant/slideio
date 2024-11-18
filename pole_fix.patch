@@ -1,0 +1,13 @@
+diff --git a/pole/conanfile.py b/pole/conanfile.py
+index 425815b..6969b43 100644
+--- a/pole/conanfile.py
++++ b/pole/conanfile.py
+@@ -6,7 +6,7 @@ import glob
+ class PoleConan(ConanFile):
+     name = "pole"
+     url = ""
+-    version = "1.0.4"
++    version = "master"
+     description = "portable library for structured storagec."
+     settings = "os", "compiler", "build_type", "arch"
+     generators = "cmake"

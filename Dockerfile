@@ -122,7 +122,7 @@ RUN cd /opt/slideio && git submodule init && git submodule update
 RUN git clone https://github.com/gflags/gflags.git && \
     cd gflags && \
     mkdir build && cd build && \
-    cmake .. -DBUILD_SHARED_LIBS=ON -DCMAKE_INSTALL_PREFIX=/usr/local && \
+    cmake .. -DBUILD_SHARED_LIBS=OFF -DCMAKE_INSTALL_PREFIX=/usr/local && \
     make -j$(nproc) && \
     make install && \
     cd ../.. && rm -rf gflags
@@ -132,4 +132,3 @@ ENV LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
 
 RUN cd /opt/slideio/src/py-bind && bash ./build_slideio_dists_linux.sh
 CMD ["bash"]
-
